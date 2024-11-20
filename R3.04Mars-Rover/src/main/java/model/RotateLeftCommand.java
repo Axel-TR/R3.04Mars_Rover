@@ -1,14 +1,14 @@
 package model;
 
-public class MoveCommand implements Command {
+public class RotateLeftCommand implements Command {
 	private final Robot robot;
 	
-	public MoveCommand(Robot robot) {
+	public RotateLeftCommand(Robot robot) {
 		this.robot = robot;
 	}
 
 	@Override
 	public void execute() {
-		robot.move();
+		robot.turn('l');
 	}
 }
